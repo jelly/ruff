@@ -1,5 +1,6 @@
 pub(crate) use assert_on_string_literal::*;
 pub(crate) use await_outside_async::*;
+pub(crate) use bad_open_mode::*;
 pub(crate) use bad_str_strip_call::*;
 pub(crate) use bad_string_format_type::*;
 pub(crate) use bidirectional_unicode::*;
@@ -54,6 +55,7 @@ pub(crate) use yield_in_init::*;
 
 mod assert_on_string_literal;
 mod await_outside_async;
+mod bad_open_mode;
 mod bad_str_strip_call;
 mod bad_string_format_type;
 mod bidirectional_unicode;

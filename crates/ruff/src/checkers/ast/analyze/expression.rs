@@ -528,6 +528,9 @@ pub(crate) fn expression(expr: &Expr, checker: &mut Checker) {
             if checker.enabled(Rule::BadFilePermissions) {
                 flake8_bandit::rules::bad_file_permissions(checker, func, args, keywords);
             }
+            if checker.enabled(Rule::BadOpenMode) {
+                pylint::rules::bad_open_mode(checker, func, args, keywords);
+            }
             if checker.enabled(Rule::RequestWithNoCertValidation) {
                 flake8_bandit::rules::request_with_no_cert_validation(checker, func, keywords);
             }
